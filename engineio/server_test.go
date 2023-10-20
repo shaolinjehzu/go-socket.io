@@ -13,12 +13,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/googollee/go-socket.io/engineio/frame"
-	"github.com/googollee/go-socket.io/engineio/packet"
-	"github.com/googollee/go-socket.io/engineio/session"
-	"github.com/googollee/go-socket.io/engineio/transport"
-	"github.com/googollee/go-socket.io/engineio/transport/polling"
-	"github.com/googollee/go-socket.io/engineio/transport/websocket"
+	"github.com/shaolinjehzu/go-socket.io/engineio/frame"
+	"github.com/shaolinjehzu/go-socket.io/engineio/packet"
+	"github.com/shaolinjehzu/go-socket.io/engineio/session"
+	"github.com/shaolinjehzu/go-socket.io/engineio/transport"
+	"github.com/shaolinjehzu/go-socket.io/engineio/transport/polling"
+	"github.com/shaolinjehzu/go-socket.io/engineio/transport/websocket"
 )
 
 func TestEnginePolling(t *testing.T) {

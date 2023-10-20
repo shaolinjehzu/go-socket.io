@@ -6,8 +6,8 @@ import (
 	"io"
 	"reflect"
 
-	"github.com/googollee/go-socket.io/engineio/session"
-	"github.com/googollee/go-socket.io/logger"
+	"github.com/shaolinjehzu/go-socket.io/engineio/session"
+	"github.com/shaolinjehzu/go-socket.io/logger"
 )
 
 type FrameWriter interface {
