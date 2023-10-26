@@ -63,12 +63,12 @@ func fmtNS(ns string) string {
 	return ns
 }
 
-func (c *Client) Connect() error {
+func (c *Client) Connect(headers map[string][]string) error {
 	dialer := engineio.Dialer{
 		Transports: []transport.Transport{polling.Default},
 	}
 
-	enginioCon, err := dialer.Dial(c.url, nil)
+	enginioCon, err := dialer.Dial(c.url, headers)
 	if err != nil {
 		return err
 	}
